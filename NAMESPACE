@@ -1,0 +1,11 @@
+useDynLib(MultiCA)
+export(mbca, bcatest, contrList)
+S3method(print, bcatest)
+S3method(print, mbca)
+S3method(plot, mbca)
+
+import("Rcpp", "RcppEigen")
+importFrom("ade4", s.arrow)
+importFrom("ade4", s.class)
+importFrom("ade4", scatterutil.eigen)
+

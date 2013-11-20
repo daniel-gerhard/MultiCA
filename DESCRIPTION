@@ -1,0 +1,12 @@
+Package: MultiCA
+Type: Package
+Title: Multiple comparison of clusters in between component analysis
+Version: 0.0-1
+Date: 2013-11-19
+Author: Daniel Gerhard
+Maintainer: Daniel Gerhard <gerhard@biostat.uni-hannover.de>
+Description: Adaption of bca ade4 code for multiple comparisons of groups via a permutation maximum test
+License: GPL
+Depends: Rcpp (>= 0.10.6), RcppEigen (>= 0.3.2.0)
+LinkingTo: Rcpp, RcppEigen
+Imports: ade4
