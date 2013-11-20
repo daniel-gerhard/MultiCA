@@ -1,4 +1,4 @@
 MultiCA
 =======
 
-R package for multiple testing in between class analysis
+R package to perform multiple tests in between class analysis
