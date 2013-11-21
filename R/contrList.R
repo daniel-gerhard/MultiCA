@@ -42,5 +42,6 @@ contrList <- function(n, type=c("Dunnett", "Tukey", "AVE"), base=1){
     })
     names(CL) <- paste("C", 1:k, sep="")
   })  
+  class(CL) <- "contrList"
   return(CL)
 }

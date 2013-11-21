@@ -11,7 +11,7 @@ bcatest(x, Klist, nf=NULL, nperm=999)
 
 \arguments{
   \item{x}{An object of class mbca.}
-  \item{Klist}{A list of matrices defining the hypotheses of interest.}
+  \item{Klist}{A list of matrices defining the hypotheses of interest or a character string denoting a predefined set of hypotheses (see type argument in \code{\link{contrList}}).}
   \item{nf}{Number of factors used for comparisons. If NULL (default) the full rank is used.}
   \item{nperm}{Number of permutations. default=999}
 }
@@ -21,6 +21,6 @@ bcatest(x, Klist, nf=NULL, nperm=999)
 
 \author{Daniel Gerhard}
 
-\seealso{\code{\link[ade4]{randtest}}}
+\seealso{\code{\link{mbca}}, \code{\link{contrList}}, \code{\link[ade4]{randtest}}}
 
 \keyword{ misc }

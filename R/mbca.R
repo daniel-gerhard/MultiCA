@@ -1,7 +1,8 @@
-mbca <- function(mat, group){
+mbca <- function(mat, group){  
   mat <- as.matrix(mat)
   nr <- nrow(mat)
   nc <- ncol(mat)
+  if (length(group) != nr) stop("group has not the same length as the number of rows in mat!")
   if (is.null(rownames(mat))) rownames(mat) <- 1:nr
   if (is.null(colnames(mat))) colnames(mat) <- 1:nc
   row.w <-  rep(1, nr)/nr

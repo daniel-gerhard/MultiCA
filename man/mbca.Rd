@@ -19,6 +19,19 @@ mbca(mat, group)
 
 \author{Daniel Gerhard}
 
-\seealso{\code{\link[ade4]{dudi.pca}}, \code{\link[ade4]{bca}}}
+\seealso{\code{\link[ade4]{dudi.pca}}, \code{\link[ade4]{bca}}, \code{\link{bcatest}}}
+
+\examples{
+### see ?coagulation in package SimComp
+data("coagulation", package = "SimComp")
+
+### level "S" is the standard, "H" and "B" are novel procedures
+coagulation$Group <- relevel(coagulation$Group, ref = "S")
+
+(bcaobj <- mbca(mat=as.matrix(coagulation[,c(2,3,4)]), coagulation$Group))
+plot(bcaobj)
+
+bcatest(bcaobj, Klist="Tukey", nperm=999)
+}
 
 \keyword{ misc }

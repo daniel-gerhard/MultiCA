@@ -20,6 +20,6 @@ contrList(n, type=c("Dunnett", "Tukey", "AVE"), base=1)
 
 \author{Daniel Gerhard}
 
-\seealso{\code{\link[multcomp]{contrMat}}}
+\seealso{\code{\link{bcatest}}, \code{\link[multcomp]{contrMat}}}
 
 \keyword{ misc }
